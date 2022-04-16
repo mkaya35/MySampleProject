@@ -38,9 +38,8 @@ public class SampleTest {
         when().get("/users/mkaya35").then().time(lessThan(200L));
     }
 
-
     @AfterTest
     public void afterTest() {
-        System.out.println("Teardown after test execution");
+        System.out.println("Tear-down after test execution");
     }
 }
